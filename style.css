@@ -11,142 +11,144 @@ body {
 
 .card {
     width: 90%;
+    
     max-width: 470px;
     background: linear-gradient(135deg, #00feba, #5b548a);
     color: #fff;
     border-radius: 20px;
-    margin: 10% auto 0; /* Adjusted margin for better responsiveness */
-    padding: 40px 35px;
+    margin: 10% auto 0;
+    padding: 40px 5%; /* Adjusted padding for better responsiveness */
     text-align: center;
 }
 
 .search {
     width: 100%;
+
     display: flex;
+    flex-wrap: wrap; /* Added flex-wrap for better responsiveness */
     align-items: center;
     justify-content: center;
+}
+
+.search input {
+    background: #ebfffc;
+    color: #555;
+    padding: 10px; /* Adjusted padding for better responsiveness */
+    height: 50px;
+    border-radius: 20px;
+    flex: 1;
+    border: none;
+    margin: 8px 0; /* Adjusted margin for better responsiveness */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.search button {
+    border: none;
+   margin: 10px;
+    padding: 8px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 32px;
 }
 
 .weather {
     display: none;
 }
 
-.search input {
-    background: #ebfffc;
-    color: #555;
-    padding: 10px 15px; /* Adjusted padding for better responsiveness */
-    height: 40px; /* Adjusted height for better responsiveness */
-    border-radius: 20px; /* Adjusted border-radius for better responsiveness */
-    flex: 1;
-    border: none;
-    margin-right: 8px; /* Adjusted margin for better responsiveness */
-    font-size: 14px; /* Adjusted font-size for better responsiveness */
-    font-weight: bold;
-}
-
-.search button {
-    border: none;
-    background:none;
-    border-radius: 50%;
-    width: 40px; /* Adjusted width for better responsiveness */
-    height: 40px; /* Adjusted height for better responsiveness */
-    cursor: pointer;
-}
-
-.search button img {
-    width: 32px; /* Adjusted width for better responsiveness */
-}
-
 .weather-icon {
-    width: 120px; /* Adjusted width for better responsiveness */
-    margin-top: 20px; /* Adjusted margin-top for better responsiveness */
+    width: 80px;
+    margin-top: 10px;
 }
 
 .weather h1 {
-    font-size: 40px; /* Adjusted font-size for better responsiveness */
-    font-weight: 500;
+    font-size: 30px;
 }
 
 .weather h2 {
-    font-size: 25px; /* Adjusted font-size for better responsiveness */
-    font-weight: 400;
-    margin-top: -5px; /* Adjusted margin-top for better responsiveness */
+    font-size: 20px;
+    margin-top: -3px;
 }
 
 .details {
     display: flex;
-    flex-wrap: wrap; /* Added flex-wrap for better responsiveness */
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10px; /* Adjusted padding for better responsiveness */
-    margin-top: 20px; /* Adjusted margin-top for better responsiveness */
+    padding: 0 5%;
+    margin-top: 10px;
 }
 
 .col {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; /* Adjusted flex-direction for better responsiveness */
+    flex-direction: column;
     text-align: center;
     font-weight: 300;
-    margin-bottom: 10px; /* Adjusted margin-bottom for better responsiveness */
+    margin-bottom: 10px;
 }
 
 .col img {
-    width: 30px; /* Adjusted width for better responsiveness */
-    margin-right: 0; /* Removed margin-right for better responsiveness */
+    width: 25px;
 }
 
 .humidity,
 .wind {
-    font-size: 18px; /* Adjusted font-size for better responsiveness */
-    margin-top: -4px; /* Adjusted margin-top for better responsiveness */
+    font-size: 16px;
+    margin-top: -2px;
 }
 
 /* Media Query for smaller screens */
 @media only screen and (max-width: 768px) {
     .card {
         width: 90%;
-        max-width: 90%; /* Adjusted max-width for better responsiveness */
+        max-width: 90%;
+        padding: 40px 5%;
     }
 
     .search input {
-        padding: 10px; /* Adjusted padding for better responsiveness */
-        height: 50px; /* Adjusted height for better responsiveness */
-        font-size: 16px; /* Adjusted font-size for better responsiveness */
+        padding: 10px;
+        height: 50px;
+        font-size: 16px;
     }
 
     .search button {
-        width: 50px; /* Adjusted width for better responsiveness */
-        height: 50px; /* Adjusted height for better responsiveness */
+        width: 50px;
+        height: 50px;
     }
 
     .weather-icon {
-        width: 80px; /* Adjusted width for better responsiveness */
-        margin-top: 10px; /* Adjusted margin-top for better responsiveness */
+        width: 60px; /* Adjusted width for better responsiveness */
+        margin-top: 10px;
     }
 
     .weather h1 {
-        font-size: 30px; /* Adjusted font-size for better responsiveness */
+        font-size: 24px; /* Adjusted font-size for better responsiveness */
     }
 
     .weather h2 {
-        font-size: 20px; /* Adjusted font-size for better responsiveness */
-        margin-top: -3px; /* Adjusted margin-top for better responsiveness */
+        font-size: 18px; /* Adjusted font-size for better responsiveness */
+        margin-top: -3px;
     }
 
     .details {
-        padding: 0 5px; /* Adjusted padding for better responsiveness */
-        margin-top: 10px; /* Adjusted margin-top for better responsiveness */
+        padding: 0 5%;
+        margin-top: 10px;
     }
 
     .col img {
-        width: 25px; /* Adjusted width for better responsiveness */
+        width: 20px; /* Adjusted width for better responsiveness */
     }
 
     .humidity,
     .wind {
-        font-size: 16px; /* Adjusted font-size for better responsiveness */
-        margin-top: -2px; /* Adjusted margin-top for better responsiveness */
+        font-size: 14px; /* Adjusted font-size for better responsiveness */
+        margin-top: -2px;
     }
 }
