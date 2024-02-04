@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    border-radius: 20px;
+    margin: 10% auto 0; /* Adjusted margin for better responsiveness */
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather {
+    display: none;
+}
+
+.search input {
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 15px; /* Adjusted padding for better responsiveness */
+    height: 40px; /* Adjusted height for better responsiveness */
+    border-radius: 20px; /* Adjusted border-radius for better responsiveness */
+    flex: 1;
+    border: none;
+    margin-right: 8px; /* Adjusted margin for better responsiveness */
+    font-size: 14px; /* Adjusted font-size for better responsiveness */
+    font-weight: bold;
+}
+
+.search button {
+    border: none;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 40px; /* Adjusted width for better responsiveness */
+    height: 40px; /* Adjusted height for better responsiveness */
+    cursor: pointer;
+}
+
+.search button img {
+    width: 12px; /* Adjusted width for better responsiveness */
+}
+
+.weather-icon {
+    width: 120px; /* Adjusted width for better responsiveness */
+    margin-top: 20px; /* Adjusted margin-top for better responsiveness */
+}
+
+.weather h1 {
+    font-size: 40px; /* Adjusted font-size for better responsiveness */
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 25px; /* Adjusted font-size for better responsiveness */
+    font-weight: 400;
+    margin-top: -5px; /* Adjusted margin-top for better responsiveness */
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap; /* Added flex-wrap for better responsiveness */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px; /* Adjusted padding for better responsiveness */
+    margin-top: 20px; /* Adjusted margin-top for better responsiveness */
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Adjusted flex-direction for better responsiveness */
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 10px; /* Adjusted margin-bottom for better responsiveness */
+}
+
+.col img {
+    width: 30px; /* Adjusted width for better responsiveness */
+    margin-right: 0; /* Removed margin-right for better responsiveness */
+}
+
+.humidity,
+.wind {
+    font-size: 18px; /* Adjusted font-size for better responsiveness */
+    margin-top: -4px; /* Adjusted margin-top for better responsiveness */
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 90%;
+        max-width: 90%; /* Adjusted max-width for better responsiveness */
+    }
+
+    .search input {
+        padding: 10px; /* Adjusted padding for better responsiveness */
+        height: 50px; /* Adjusted height for better responsiveness */
+        font-size: 16px; /* Adjusted font-size for better responsiveness */
+    }
+
+    .search button {
+        width: 50px; /* Adjusted width for better responsiveness */
+        height: 50px; /* Adjusted height for better responsiveness */
+    }
+
+    .weather-icon {
+        width: 80px; /* Adjusted width for better responsiveness */
+        margin-top: 10px; /* Adjusted margin-top for better responsiveness */
+    }
+
+    .weather h1 {
+        font-size: 30px; /* Adjusted font-size for better responsiveness */
+    }
+
+    .weather h2 {
+        font-size: 20px; /* Adjusted font-size for better responsiveness */
+        margin-top: -3px; /* Adjusted margin-top for better responsiveness */
+    }
+
+    .details {
+        padding: 0 5px; /* Adjusted padding for better responsiveness */
+        margin-top: 10px; /* Adjusted margin-top for better responsiveness */
+    }
+
+    .col img {
+        width: 25px; /* Adjusted width for better responsiveness */
+    }
+
+    .humidity,
+    .wind {
+        font-size: 16px; /* Adjusted font-size for better responsiveness */
+        margin-top: -2px; /* Adjusted margin-top for better responsiveness */
+    }
+}
