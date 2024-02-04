@@ -46,7 +46,7 @@ body {
 
 .search button {
     border: none;
-    background: #ebfffc;
+    background:none;
     border-radius: 50%;
     width: 40px; /* Adjusted width for better responsiveness */
     height: 40px; /* Adjusted height for better responsiveness */
@@ -54,7 +54,7 @@ body {
 }
 
 .search button img {
-    width: 12px; /* Adjusted width for better responsiveness */
+    width: 32px; /* Adjusted width for better responsiveness */
 }
 
 .weather-icon {
